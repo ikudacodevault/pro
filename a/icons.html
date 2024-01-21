@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    :root {
+      --color-bg: #212529;
+      --color-fg: #fff;
+    }
+
+    * {
+      user-select: none;
+    }
+
+    html,
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-fg);
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      display: grid;
+      overflow: hidden;
+    }
+
+    .card {
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: var(--color-bg);
+    }
+
+    .header {
+      display: grid;
+      grid-template-columns: minmax(0, 90px) minmax(0, 0.9fr);
+      gap: 24px;
+      display: block;
+    }
+
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    ul {
+      flex-wrap: wrap;
+      display: flex;
+      gap: 12px;
+    }
+
+    a {
+      color: var(--color-fg);
+      transition: .3s;
+    }
+
+    a:hover {
+      opacity: 60%;
+      transition: .3s;
+    }
+
+    li svg {
+      height: 20px;
+      width: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <section class="header">
+      <div class="bio">
+        <ul>
+          <li>
+            <a href="mailto:ace@ikuda.net" rel="me" target="_blank" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="40" ry="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M112 160l144 112 144-112"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://ikuda.net" rel="me" target="_blank" aria-label="Website">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://woem.men/@ace" rel="me" target="_blank" aria-label="Fediverse">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 196.52 196.52"><path d="M47.924 72.796a18.23 18.23 0 0 1-7.796 7.76l42.798 42.965 10.318-5.229-45.321-45.496zm56.452 56.67l-10.318 5.229 21.686 21.771a18.23 18.23 0 0 1 7.797-7.761l-19.165-19.239zm49.518-39.669l-24.229 12.279 1.786 11.427 27.415-13.894a18.23 18.23 0 0 1-4.972-9.812zm-38.295 19.408L58.31 138.238a18.23 18.23 0 0 1 4.973 9.813l54.103-27.419-1.786-11.428zM97.175 37.686L69.531 91.654l8.162 8.193 29.269-57.139a18.23 18.23 0 0 1-9.787-5.022zM62.341 105.69l-14.002 27.335a18.23 18.23 0 0 1 9.786 5.021l12.378-24.164-8.161-8.193zm-22.45-25.014a18.23 18.23 0 0 1-9.106 1.904l-1.76-.184 8.176 52.298a18.23 18.23 0 0 1 9.106-1.904l1.759.184-8.175-52.298zm23.435 67.634a18.23 18.23 0 0 1-1.732 10.863l52.289 8.391a18.23 18.23 0 0 1 1.732-10.863l-52.289-8.391zM159.05 99.8l-24.135 47.117a18.23 18.23 0 0 1 9.788 5.022l24.134-47.117a18.23 18.23 0 0 1-9.788-5.023zm-32.917-66.64a18.23 18.23 0 0 1-7.797 7.761l37.376 37.521a18.23 18.23 0 0 1 7.797-7.761L126.133 33.16zm-34.114-5.477L44.77 51.628a18.23 18.23 0 0 1 4.972 9.812L96.99 37.495a18.23 18.23 0 0 1-4.972-9.811zm26.23 13.281a18.23 18.23 0 0 1-9.256 1.98l-1.595-.167 4.185 26.8 11.42 1.832-4.754-30.445zm-4.233 44.193l9.896 63.363a18.23 18.23 0 0 1 10.88-1.628l-9.355-59.903-11.42-1.832zm-64.24-23.516a18.23 18.23 0 0 1 .201 3.729 18.23 18.23 0 0 1-1.894 7.139l26.821 4.308 5.272-10.294-30.398-4.882zm45.968 7.382l-5.272 10.295 63.371 10.178a18.23 18.23 0 0 1-.184-3.63 18.23 18.23 0 0 1 1.945-7.23l-59.86-9.614z"/><g transform="matrix(.99852 .054393 -.054393 .99852 6.679 -32.496)" class="B"><circle cx="106.266" cy="51.536" r="16.571"/><circle cx="171.428" cy="110.193" r="16.571"/><circle cx="135.764" cy="190.277" r="16.571"/><circle cx="48.559" cy="181.114" r="16.571"/><circle cx="30.329" cy="95.367" r="16.571"/></g></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://gitlab.com/aceikuda" target="_blank" aria-label="Gitlab">
+              <svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M494.07 281.6l-25.18-78.08a11 11 0 00-.61-2.1l-50.5-156.94a20.08 20.08 0 00-19.17-13.82 19.77 19.77 0 00-18.95 13.94l-48.14 149.55h-152L131.34 44.59a19.76 19.76 0 00-18.86-13.94h-.11a20.15 20.15 0 00-19.12 14L42.7 201.73c0 .14-.11.26-.16.4l-25.63 79.48a29.15 29.15 0 0010.44 32.46l221.44 162.41a11.25 11.25 0 0013.38-.07l221.48-162.34a29.13 29.13 0 0010.42-32.47m-331-64.51l61.73 191.76L76.63 217.09m209.64 191.8l59.19-183.84 2.55-8h86.52L300.47 390.44M398.8 59.31l43.37 134.83h-86.82M324.16 217l-43 133.58-25.66 79.56L186.94 217M112.27 59.31l43.46 134.83H69M40.68 295.58a6.19 6.19 0 01-2.21-6.9l19-59 139.61 180.59m273.26-114.69L313.92 410.22l.52-.69L453.5 229.64l19 59a6.2 6.2 0 01-2.19 6.92"></path></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/aceikuda" target="_blank" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@aceikuda" target="_blank" aria-label="YouTube">
+              <svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149 1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5 58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5 2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9zM207 353.89v-196.5l145 98.2z"></path></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitch.tv/aceikuda" target="_blank" aria-label="Twitch">
+              <svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M80 32l-32 80v304h96v64h64l64-64h80l112-112V32zm336 256l-64 64h-96l-64 64v-64h-80V80h304z"/><path d="M320 143h48v129h-48zM208 143h48v129h-48z"></path></svg>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="https://bsky.app/profile/bsky.enby.me" target="_blank" aria-label="Bluesky">
+              <svg width="24" height="21" aria-hidden="true" viewBox="0 0 360 320" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor"><path d="M254.896 184.158C252.81 183.926 250.733 183.645 248.671 183.315C250.773 183.574 252.849 183.855 254.896 184.158Z"></path><path d="M180 141.964C163.699 110.262 119.308 51.1817 78.0347 22.044C38.4971 -5.86834 23.414 -1.03207 13.526 3.43594C2.08093 8.60755 0 26.1785 0 36.5164C0 46.8542 5.66748 121.272 9.36416 133.694C21.5786 174.738 65.0603 188.607 105.104 184.156C107.151 183.852 109.227 183.572 111.329 183.312C109.267 183.642 107.19 183.924 105.104 184.156C46.4204 192.847 -5.69621 214.233 62.6582 290.33C137.848 368.18 165.705 273.637 180 225.702C194.295 273.637 210.76 364.771 295.995 290.33C360 225.702 313.58 192.85 254.896 184.158C252.81 183.926 250.733 183.645 248.671 183.315C250.773 183.574 252.849 183.855 254.896 184.158C294.94 188.61 338.421 174.74 350.636 133.697C354.333 121.275 360 46.8568 360 36.519C360 26.1811 357.919 8.61012 346.474 3.43851C336.586 -1.02949 321.503 -5.86576 281.965 22.0466C240.692 51.1843 196.301 110.262 180 141.964Z"></path></svg>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>

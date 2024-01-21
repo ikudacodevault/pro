@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="../a/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preload" href="../a/css/bootstrap.min.css" as="style" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/gif" href="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+  <title>Ace Ikuda - ikuda.net Documentation</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ace Ikuda - ikuda.net Documentation">
+  <meta property="og:description" content="The documentation for current and past ikuda.net & enby.me services.">
+  <meta property="og:url" content="https://pro.ikuda.net/p/docs">
+  <meta property="og:image" content="https://pro.ikuda.net/a/img/pro-ogp.png">
+  <meta property="og:image:width" content="500">
+  <meta property="og:image:height" content="500">
+  <meta name="robots" content="noindex, nofollow">
+  <script>
+    // Prevent variables from being global      
+    (function () {
+
+          /*
+              1. Inject CSS which makes iframe invisible
+          */
+
+        var div = document.createElement('div'),
+            ref = document.getElementsByTagName('base')[0] || 
+                  document.getElementsByTagName('script')[0];
+
+        div.innerHTML = '&shy;<style> iframe { visibility: hidden; } </style>';
+
+        ref.parentNode.insertBefore(div, ref);
+
+
+        /*
+            2. When window loads, remove that CSS,
+               making iframe visible again
+        */
+
+        window.onload = function() {
+            div.parentNode.removeChild(div);
+        }
+
+    })();
+</script>
+</head>
+
+<body>
+  <script src="../a/js/bootstrap.min.js"></script>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><img src="../a/img/aceikuda-logo-smallest.webp" alt="ace ikuda" height="30" width="auto"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./docs.html" aria-current="page">Docs</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+            <a class="nav-link" href="https://ikuda.net/" target="_blank">ikuda.net</a>
+          </li>
+        </ul>
+        <iframe class="form-inline" src="../a/icons.html" title="social links" frameborder="0" width="212" height="20"></iframe>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="bg-body-tertiary p-5 rounded">
+      <h2>About ikuda.net and it's services / subdomains</h2>
+      <br>
+      <h3>ikuda.net</h3>
+      <p class="lead">
+        ikuda.net is registered on <a href="https://www.spaceship.com/" target="_blank">Spaceship</a> and the DNS is handled by <a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a>, <a href="https://www.zoho.com/mail/" target="_blank">Zoho Mail</a> handles emails. ikuda.net does not use site generators, I write the HTML and CSS by hand onto a <a href="https://about.gitlab.com/" target="_blank">GitLab</a> repo (Note: only the pro pages use bootstrap). When a new commit is made, the repo is automatically deployed onto Cloudflare's network by <a href="https://pages.cloudflare.com/" target="_blank">Cloudflare Pages</a>.
+      </p>
+      <br>
+      <h3>archive.ikuda.net</h3>
+      <p class="lead">
+        The ikuda archive operates the same way as ikuda.net; GitLab repo deployed through Cloudflare Pages. Contains old pages. (eg. blog posts, deprecated pages)
+      </p>
+      <br>
+      <h3>r2.ikuda.net</h3>
+      <p class="lead">
+        r2.ikuda.net is a <a href="https://www.cloudflare.com/en-gb/developer-platform/r2/" target="_blank">Cloudflare R2</a> storage bucket behind <a href="https://www.cloudflare.com/en-gb/zero-trust/products/access/" target="_blank">Cloudflare Access</a>.
+      </p>
+      <br>
+      <h3>eu-external.ikuda.net, eu-redistributed.ikuda.net</h3>
+      <p class="lead">
+        These R2 buckets are both not behind Access. eu-external is used for storing static assets for my websites outside of ikuda.net. (eg. <a href="https://ikuda.neocities.org/" target="_blank">Neocities</a>) eu-redistributed is used for storing the redistributed resources in <a href="https://ikuda.net/p/mentalhealth/index.html" target="_blank">mental health</a>. Both buckets are located in the European Union, hence the eu- prefix. For DMCA info regarding eu-redistributed, see <a href="https://ikuda.net/p/mentalhealth/info.html" target="_blank">this page</a>.
+      </p>
+      <br>
+      <h3>woem.workers.ikuda.net</h3>
+      <p class="lead">
+        A very basic <a href="https://workers.cloudflare.com/" target="_blank">Cloudflare Worker</a>; see the code below.
+        <br><code><pre>
+export default {
+  async fetch(request, env, ctx) {
+    return new Response('woem!');
+  },
+};</pre></code>
+      </p>
+    </div>
+    <div class="vr"></div>
+    <div class="bg-body-tertiary p-5 rounded">
+      <h2>About old services</h2>
+      <br>
+      <h3>enby.me</h3>
+      <p class="lead">
+        enby.me was ikuda.net before I registered ikuda.net. In the start, it used Netlify for website deployments and DNS. Slowly, the domain was completely migrated to Cloudflare.
+      </p>
+      <br>
+      <h3>gay.enby.me, comfy.enby.me</h3>
+      <p class="lead">
+        gay.enby.me was an <a href="https://akkoma.social/" target="_blank">Akkoma</a> instance, and comfy.enby.me was a <a href="https://gotosocial.org/" target="_blank">GoToSocial</a> instance. Both ran on <a href="https://www.digitalocean.com/products/droplets" target="_blank">Digitalocean droplets</a>.
+      </p>
+    </div>
+    <div class="vr"></div>
+    <!-- should rewrite this part -->
+    <!-- <div class="bg-body-tertiary p-5 rounded">
+      <h3>Why are you sharing this information about your site? Isn't it sensitive?</h3>
+      <p class="lead">
+        Number one, I like looking at stuff like this. Seeing how a website works, what it uses, etc. So why not share some of this directly. <small class="text-muted">(Unless you wanted to discover this yourself, then I'm sorry!)</small>
+      </p>
+      <p class="lead">
+        Number two, most of this is publically available information about every website ever and always has been. The registrar can be figured out by running <a href="https://lookup.icann.org/" target="_blank">a lookup</a> of a domain's registration information. Mail servers can be found by looking at a domain's <a href="https://dnsdumpster.com/" target="_blank">DNS MX records</a>. You can figure out that r2.ikuda.net is using Cloudflare Access by literally just <a href="https://r2.ikuda.net/" target="_blank">visiting it</a>.
+      </p>
+    </div> -->
+  </main>
+
+</body>
+
+</html>

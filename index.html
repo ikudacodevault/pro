@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="./a/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preload" href="./a/css/bootstrap.min.css" as="style" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/gif" href="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+  <title>Ace Ikuda</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ace Ikuda">
+  <meta property="og:description" content="The pro version of ikuda.net, uses Bootstrap.">
+  <meta property="og:url" content="https://pro.ikuda.net/">
+  <meta property="og:image" content="https://pro.ikuda.net/a/img/pro-ogp.png">
+  <meta property="og:image:width" content="500">
+  <meta property="og:image:height" content="500">
+  <meta name="robots" content="noindex, nofollow">
+  <!-- script source: https://css-tricks.com/prevent-white-flash-iframe/ -->
+  <script>
+      // Prevent variables from being global      
+      (function () {
+
+            /*
+                1. Inject CSS which makes iframe invisible
+            */
+
+          var div = document.createElement('div'),
+              ref = document.getElementsByTagName('base')[0] || 
+                    document.getElementsByTagName('script')[0];
+
+          div.innerHTML = '&shy;<style> iframe { visibility: hidden; } </style>';
+
+          ref.parentNode.insertBefore(div, ref);
+
+
+          /*
+              2. When window loads, remove that CSS,
+                 making iframe visible again
+          */
+
+          window.onload = function() {
+              div.parentNode.removeChild(div);
+          }
+
+      })();
+  </script>
+</head>
+
+<body>
+  <script src="./a/js/bootstrap.min.js"></script>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./a/img/aceikuda-logo-smallest.webp" alt="ace ikuda" height="30" width="auto"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="./index.html" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./p/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./p/docs.html">Docs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://ikuda.net/" target="_blank">ikuda.net</a>
+          </li>
+        </ul>
+        <iframe class="form-inline" src="./a/icons.html" title="social links" frameborder="0" width="212" height="20"></iframe>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="bg-body-tertiary p-5 rounded">
+      <h1>pro.ikuda.net</h1>
+      <p class="lead">This is an attempt to make a more professional looking website. I've been updating this on and off when I haven't been working on anything else. See the links on the navbar for more info.</p>
+      <a class="btn btn-lg btn-primary m-0" href="./p/about.html" role="button">About &raquo;</a><a class="btn btn-lg btn-outline-secondary m-2" href="https://github.com/ikudanet/pro" role="button" target="_blank">Source code &raquo;</a>
+    </div>
+    <!-- <div class="bg-body-tertiary p-5 rounded">
+      <h1>/p/pro/</h1>
+      <p class="lead">wowee you found a page which isn't finished, check the about page (not finished either btw) for proper grammar</p>
+      <a class="btn btn-lg btn-primary" href="./p/about.html" role="button">there's a link in the navbar too &raquo;</a>
+    </div>
+    this website screams bootstrap and the social icons are literally an iframe also on smaller screens the navbar can't be expanded if javascript is disabled -->
+  </main>
+
+</body>
+
+</html>
