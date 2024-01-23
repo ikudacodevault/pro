@@ -16,34 +16,23 @@
   <meta property="og:image:width" content="500">
   <meta property="og:image:height" content="500">
   <meta name="robots" content="noindex, nofollow">
-  <!-- script source: https://css-tricks.com/prevent-white-flash-iframe/ -->
-  <script>
-      // Prevent variables from being global      
-      (function () {
+  <script>  
+    (function () {
 
-            /*
-                1. Inject CSS which makes iframe invisible
-            */
+        var div = document.createElement('div'),
+            ref = document.getElementsByTagName('base')[0] || 
+                  document.getElementsByTagName('script')[0];
 
-          var div = document.createElement('div'),
-              ref = document.getElementsByTagName('base')[0] || 
-                    document.getElementsByTagName('script')[0];
+        div.innerHTML = '&shy;<style> iframe { visibility: hidden; } </style>';
 
-          div.innerHTML = '&shy;<style> iframe { visibility: hidden; } </style>';
-
-          ref.parentNode.insertBefore(div, ref);
+        ref.parentNode.insertBefore(div, ref);
 
 
-          /*
-              2. When window loads, remove that CSS,
-                 making iframe visible again
-          */
+        window.onload = function() {
+            div.parentNode.removeChild(div);
+        }
 
-          window.onload = function() {
-              div.parentNode.removeChild(div);
-          }
-
-      })();
+    })();
   </script>
 </head>
 
@@ -81,12 +70,6 @@
       <p class="lead">This is an attempt to make a more professional looking website. I've been updating this on and off when I haven't been working on anything else. See the links on the navbar for more info.</p>
       <a class="btn btn-lg btn-primary m-0" href="./p/about.html" role="button">About &raquo;</a><a class="btn btn-lg btn-outline-secondary m-2" href="https://github.com/ikudanet/pro" role="button" target="_blank">Source code &raquo;</a>
     </div>
-    <!-- <div class="bg-body-tertiary p-5 rounded">
-      <h1>/p/pro/</h1>
-      <p class="lead">wowee you found a page which isn't finished, check the about page (not finished either btw) for proper grammar</p>
-      <a class="btn btn-lg btn-primary" href="./p/about.html" role="button">there's a link in the navbar too &raquo;</a>
-    </div>
-    this website screams bootstrap and the social icons are literally an iframe also on smaller screens the navbar can't be expanded if javascript is disabled -->
   </main>
 
 </body>

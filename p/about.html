@@ -16,13 +16,8 @@
   <meta property="og:image:width" content="500">
   <meta property="og:image:height" content="500">
   <meta name="robots" content="noindex, nofollow">
-  <script>
-    // Prevent variables from being global      
+  <script>  
     (function () {
-
-          /*
-              1. Inject CSS which makes iframe invisible
-          */
 
         var div = document.createElement('div'),
             ref = document.getElementsByTagName('base')[0] || 
@@ -33,17 +28,12 @@
         ref.parentNode.insertBefore(div, ref);
 
 
-        /*
-            2. When window loads, remove that CSS,
-               making iframe visible again
-        */
-
         window.onload = function() {
             div.parentNode.removeChild(div);
         }
 
     })();
-</script>
+  </script>
 </head>
 
 <body>
@@ -82,14 +72,14 @@
         Hiya, I'm Ace Ikuda. I am a nonprofessional web developer, writer and graphic designer*. I've been doing web development since late 2021, and making my own "branding" since early 2023. <small class="text-muted">* = beginner</small>
         <br>
         I've hosted a few different fediverse servers for personal use, such as <a href="https://akkoma.social/" target="_blank">Akkoma</a> and <a href="https://gotosocial.org/" target="_blank">GoToSocial</a>.
-      </p>
+      </p> <!-- these do *not* look good on mobile, removing temporarily until i figure out how to lay them out better
       <br>
       <h2>Skills</h2>
       <p class="lead">
         <small class="text-muted">These "skills" are listed here pretty casually, not in a "hire me" kinda way.</small>
         <br>
         Web Development & Design <small class="text-muted">(advaced beginner, since 2021),</small> Graphic Design <small class="text-muted">(beginner, since 2023),</small> HTML & CSS <small class="text-muted">(advanced beginner, since 2021),</small> Bootstrap <small class="text-muted">(advanced beginner, since 2022)</small> JavaScript <small class="text-muted">(beginner, since 2023),</small> PHP <small class="text-muted">(beginner, since 2022),</small> GitHub <small class="text-muted">(proficient, since 2021),</small> GitLab <small class="text-muted">(proficient, since 2021),</small> Cloudflare <small class="text-muted">(proficient, since 2021),</small> Netlify <small class="text-muted">(proficient, since 2022),</small> Vercel <small class="text-muted">(proficient, since 2021),</small> Visual Studio Code <small class="text-muted">(proficient, since 2022),</small> Linux <small class="text-muted">(proficient, since 2019),</small> Windows <small class="text-muted">(proficient, since 2014)</small>
-      </p>
+      </p> -->
     </div>
       <div class="vr"></div>
       <div class="bg-body-tertiary p-5 rounded">

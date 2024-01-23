@@ -16,13 +16,8 @@
   <meta property="og:image:width" content="500">
   <meta property="og:image:height" content="500">
   <meta name="robots" content="noindex, nofollow">
-  <script>
-    // Prevent variables from being global      
+  <script>  
     (function () {
-
-          /*
-              1. Inject CSS which makes iframe invisible
-          */
 
         var div = document.createElement('div'),
             ref = document.getElementsByTagName('base')[0] || 
@@ -33,17 +28,12 @@
         ref.parentNode.insertBefore(div, ref);
 
 
-        /*
-            2. When window loads, remove that CSS,
-               making iframe visible again
-        */
-
         window.onload = function() {
             div.parentNode.removeChild(div);
         }
 
     })();
-</script>
+  </script>
 </head>
 
 <body>
@@ -77,7 +67,7 @@
 
   <main class="container">
     <div class="bg-body-tertiary p-5 rounded">
-      <h2>About ikuda.net and it's services / subdomains</h2>
+      <h2>About ikuda.net and its services / subdomains</h2>
       <br>
       <h3>ikuda.net</h3>
       <p class="lead">
@@ -91,7 +81,7 @@
       <br>
       <h3>pro.ikuda.net</h3>
       <p class="lead">
-        This is the "professional" version of ikuda.net. It is currently the only aspect of ikuda.net which is open-source! It is an experiment, and will never replace ikuda.net. It's deployed the same way as ikuda.net, except from <a href="https://github.com/ikudanet/pro" target="_blank">a GitHub repo</a> instead of GitLab.
+        This is the "professional" version of ikuda.net. It's currently the only aspect of ikuda.net which is open-source! It's deployed the same way as ikuda.net, except from <a href="https://github.com/ikudanet/pro" target="_blank">a GitHub repo</a> instead of GitLab.
       </p>
       <br>
       <h3>r2.ikuda.net</h3>
@@ -101,7 +91,7 @@
       <br>
       <h3>eu-external.ikuda.net, eu-redistributed.ikuda.net</h3>
       <p class="lead">
-        These R2 buckets are both not behind Access. eu-external is used for storing static assets for my websites outside of ikuda.net. (eg. <a href="https://ikuda.neocities.org/" target="_blank">Neocities</a>) eu-redistributed is used for storing the redistributed resources in <a href="https://ikuda.net/p/mentalhealth/index.html" target="_blank">mental health</a>. Both buckets are located in the European Union, hence the eu- prefix. For DMCA info regarding eu-redistributed, see <a href="https://ikuda.net/p/mentalhealth/info.html" target="_blank">this page</a>.
+        These are both R2 storage buckets. eu-external is used for storing static assets for my websites outside of ikuda.net. (eg. <a href="https://ikuda.neocities.org/" target="_blank">Neocities</a>) eu-redistributed is used for storing the redistributed resources in <a href="https://ikuda.net/p/mentalhealth/index.html" target="_blank">mental health</a>. Both buckets have the jurisdiction set as the European Union, hence the eu- prefix. For DMCA info regarding eu-redistributed, see <a href="https://ikuda.net/p/mentalhealth/info.html" target="_blank">this page</a>.
       </p>
       <br>
       <h3>woem.workers.ikuda.net</h3>
@@ -121,7 +111,7 @@ export default {
       <br>
       <h3>enby.me</h3>
       <p class="lead">
-        enby.me was ikuda.net before I registered ikuda.net. In the start, it used Netlify for website deployments and DNS. Slowly, the domain was completely migrated to Cloudflare.
+        enby.me was ikuda.net before I registered ikuda.net. In the start, it used <a href="https://www.netlify.com/" target="_blank">Netlify</a> for website deployments and DNS. Slowly, the domain was completely migrated to Cloudflare.
       </p>
       <br>
       <h3>gay.enby.me, comfy.enby.me</h3>
