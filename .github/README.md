@@ -1,3 +1,7 @@
+### Archived and moved to [archive.ikuda.net](https://archive.ikuda.net/d/pro/index.html).
+
+---
+
 ![ace ikuda](/a/img/aceikuda-logo-smallest.webp)
 
 ---
